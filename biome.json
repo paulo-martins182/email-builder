@@ -27,10 +27,26 @@
       "react": "recommended"
     }
   },
+
   "assist": {
     "actions": {
       "source": {
-        "organizeImports": "on"
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              ":URL:",
+              ":NODE:",
+              ":PACKAGE:",
+              ":ALIAS:",
+              "@/(*)",
+              "./**",
+              "../**"
+            ],
+
+            "identifierOrder": "lexicographic"
+          }
+        }
       }
     }
   }
