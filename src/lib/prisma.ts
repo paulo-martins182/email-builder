@@ -1,5 +1,4 @@
 /** biome-ignore-all lint/suspicious/noRedeclare: <explanation> */
-import "dotenv/config";
 import { neonConfig } from "@neondatabase/serverless";
 import { PrismaNeon } from "@prisma/adapter-neon";
 import { PrismaClient } from "@prisma/client";
