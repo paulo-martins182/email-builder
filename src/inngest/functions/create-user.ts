@@ -11,7 +11,7 @@ export const userCreated = inngest.createFunction(
       id: user.id,
       email: user.email_addresses[0].email_address,
       name: `${user.first_name} ${user.last_name}`,
-      image: user.image_url,
+      picture: user.image_url,
     };
 
     await prisma.user.create({
