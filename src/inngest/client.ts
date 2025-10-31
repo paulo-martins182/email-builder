@@ -1,7 +1,5 @@
-import { EventSchemas, Inngest } from "inngest";
-import type { Events } from "./@types/user";
+import { Inngest } from "inngest";
 
 export const inngest = new Inngest({
   id: "email-builder",
-  schemas: new EventSchemas().fromRecord<Events>(),
 });
